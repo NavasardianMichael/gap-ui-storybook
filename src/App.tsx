@@ -3,8 +3,18 @@ import './App.css'
 
 const CHRONICLE_DISPLAY_FONT_TEMPLATE = [
   {
-    label: 'Chronicle Display Roman',
-    fontWeight: 400,
+    label: 'Chronicle Display XLight',
+    fontWeight: 200,
+    fontStyle: 'normal',
+  },
+  {
+    label: 'Chronicle Display XLight Italic',
+    fontWeight: 200,
+    fontStyle: 'italic',
+  },
+  {
+    label: 'Chronicle Display Light',
+    fontWeight: 300,
     fontStyle: 'normal',
   },
   {
@@ -13,26 +23,81 @@ const CHRONICLE_DISPLAY_FONT_TEMPLATE = [
     fontStyle: 'italic',
   },
   {
+    label: 'Chronicle Display Roman',
+    fontWeight: 400,
+    fontStyle: 'normal',
+  },
+  {
+    label: 'Chronicle Display Italic',
+    fontWeight: 400,
+    fontStyle: 'italic',
+  },
+  {
     label: 'Chronicle Display Semibold',
     fontWeight: 600,
     fontStyle: 'normal',
   },
   {
-    label: 'Chronicle Display Black',
-    fontWeight: 900,
+    label: 'Chronicle Display Semibold Italic',
+    fontWeight: 600,
+    fontStyle: 'italic',
+  },
+  {
+    label: 'Chronicle Display Bold',
+    fontWeight: 700,
     fontStyle: 'normal',
   },
 ]
 
 const CENTRA_NO2_FONT_TEMPLATE = [
   {
-    label: 'Centra No2',
+    label: 'Centra No2 Hairline',
+    fontWeight: 100,
+    fontStyle: 'normal',
+  },
+  {
+    label: 'Centra No2 Hairline Italic',
+    fontWeight: 100,
+    fontStyle: 'italic',
+  },
+  {
+    label: 'Centra No2 Thin',
+    fontWeight: 200,
+    fontStyle: 'normal',
+  },
+  {
+    label: 'Centra No2 Thin Italic',
+    fontWeight: 200,
+    fontStyle: 'italic',
+  },
+  {
+    label: 'Centra No2 Light',
+    fontWeight: 300,
+    fontStyle: 'normal',
+  },
+  {
+    label: 'Centra No2 Light Italic',
+    fontWeight: 300,
+    fontStyle: 'italic',
+  },
+  {
+    label: 'Centra No2 Book',
     fontWeight: 400,
     fontStyle: 'normal',
   },
   {
-    label: 'Centra No2 Italic',
+    label: 'Centra No2 Book Italic',
     fontWeight: 400,
+    fontStyle: 'italic',
+  },
+  {
+    label: 'Centra No2 Medium',
+    fontWeight: 500,
+    fontStyle: 'normal',
+  },
+  {
+    label: 'Centra No2 Medium Italic',
+    fontWeight: 500,
     fontStyle: 'italic',
   },
   {
@@ -44,6 +109,21 @@ const CENTRA_NO2_FONT_TEMPLATE = [
     label: 'Centra No2 Bold Italic',
     fontWeight: 700,
     fontStyle: 'italic',
+  },
+  {
+    label: 'Centra No2 ExtraBold',
+    fontWeight: 800,
+    fontStyle: 'normal',
+  },
+  {
+    label: 'Centra No2 ExtraBold Italic',
+    fontWeight: 800,
+    fontStyle: 'italic',
+  },
+  {
+    label: 'Centra No2 Black',
+    fontWeight: 900,
+    fontStyle: 'normal',
   },
 ]
 
@@ -57,7 +137,7 @@ const App = () => {
     <div className='flex flex-col gap-8 p-8'>
       <h1 className='font-bold text-6xl text-center'>GAP UI Storybook</h1>
       <hr />
-      <div className='flex flex-col gap-4 chronicle-display'>
+      <div className='flex flex-col gap-4 gap-ui-kit_font-chronicle-display'>
         <h2 className='text-5xl'>Chronicle Display</h2>
         <div className='flex flex-row gap-8'>
           <div className='flex flex-col gap-8 w-1/3'>
@@ -90,7 +170,6 @@ const App = () => {
               <p
                 key={font.label}
                 style={{
-                  fontFamily: 'Chronicle Display, serif',
                   fontWeight: font.fontWeight,
                   fontStyle: font.fontStyle,
                   fontSize: `${fontSize}px`,
@@ -103,7 +182,7 @@ const App = () => {
         </div>
       </div>
       <hr />
-      <div className='flex flex-col gap-4 centra-no2'>
+      <div className='flex flex-col gap-4 gap-ui-kit_font-centra-no2'>
         <h2 className='text-5xl'>Centra No2</h2>
         <div className='flex flex-row gap-8'>
           <div className='flex flex-col gap-8 w-1/3'>
@@ -136,7 +215,6 @@ const App = () => {
               <p
                 key={font.label}
                 style={{
-                  fontFamily: 'Centra No2, sans-serif',
                   fontWeight: font.fontWeight,
                   fontStyle: font.fontStyle,
                   fontSize: `${fontSize}px`,
