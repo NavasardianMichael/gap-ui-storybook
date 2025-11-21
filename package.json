@@ -1,16 +1,43 @@
 {
-  "name": "gap-ui-storybook",
-  "private": true,
+  "name": "@navasardianmichael/gap-ui-storybook",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NavasardianMichael/gap-ui-storybook.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "./dist/lib/index.js",
+  "module": "./dist/lib/index.js",
+  "types": "./dist/lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/lib/index.d.ts",
+      "import": "./dist/lib/index.js"
+    },
+    "./components/*": {
+      "types": "./dist/lib/components/*/*.d.ts",
+      "import": "./dist/lib/components/*/*.js"
+    },
+    "./fonts/*": "./dist/lib/fonts/*"
+  },
+  "files": [
+    "dist/lib"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build:lib": "tsc -b && vite build --mode lib",
+    "build:demo": "vite build",
+    "build": "pnpm build:lib && pnpm build:demo",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist/demo"
   },
   "dependencies": {
+    "@navasardianmichael/gap-ui-storybook": "^0.0.0",
     "@tailwindcss/vite": "^4.1.17",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -22,13 +49,16 @@
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.1.0",
+    "esbuild": "^0.27.0",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "gh-pages": "^6.3.0",
     "globals": "^16.5.0",
+    "postcss": "^8.5.6",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.3",
-    "vite": "^7.2.2"
+    "vite": "^7.2.2",
+    "vite-plugin-dts": "^4.5.4"
   }
 }

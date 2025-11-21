@@ -1,0 +1,83 @@
+@font-face {
+  font-family: ChronicleDisplay;
+  src: url("./assets/ChronicleDisplayXLight/font.woff2") format("woff2"),
+    url("./assets/ChronicleDisplayXLight/font.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ChronicleDisplay;
+  src: url("./assets/ChronicleDisplayXLightItalic/font.woff2") format("woff2"),
+    url("./assets/ChronicleDisplayXLightItalic/font.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: ChronicleDisplay;
+  src: url("./assets/ChronicleDisplayLight/font.woff2") format("woff2"),
+    url("./assets/ChronicleDisplayLight/font.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ChronicleDisplay;
+  src: url("./assets/ChronicleDisplayLightItalic/font.woff2") format("woff2"),
+    url("./assets/ChronicleDisplayLightItalic/font.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: ChronicleDisplay;
+  src: url("./assets/ChronicleDisplayRoman/font.woff2") format("woff2"),
+    url("./assets/ChronicleDisplayRoman/font.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ChronicleDisplay;
+  src: url("./assets/ChronicleDisplayItalic/font.woff2") format("woff2"),
+    url("./assets/ChronicleDisplayItalic/font.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: ChronicleDisplay;
+  src: url("./assets/ChronicleDisplaySemibold/font.woff2") format("woff2"),
+    url("./assets/ChronicleDisplaySemibold/font.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: ChronicleDisplay;
+  src: url("./assets/ChronicleDisplaySemiboldItalic/font.woff2") format("woff2"),
+    url("./assets/ChronicleDisplaySemiboldItalic/font.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: ChronicleDisplay;
+  src: url("./assets/ChronicleDisplayBold/font.woff2") format("woff2"),
+    url("./assets/ChronicleDisplayBold/font.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.gap-ui-kit_font-chronicle-display {
+  font-family: ChronicleDisplay, Times New Roman, Times, serif;
+}
+p {
+  font-family: ChronicleDisplay, Times New Roman, Times, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+:root {
+  --gap-ui-kit_primary-font: "ChronicleDisplay", "Times New Roman", Times, serif;
+}
