@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@navasardianmichael/gap-ui-storybook':
-        specifier: ^0.0.2
-        version: 0.0.2(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))
       '@tailwindcss/vite':
         specifier: ^4.1.17
         version: 4.1.17(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))
@@ -560,12 +557,6 @@ packages:
 
   '@microsoft/tsdoc@0.16.0':
     resolution: {integrity: sha512-xgAyonlVVS+q7Vc7qLW0UrJU7rSFcETRWsqdXZtjzRU8dF+6CkozTK4V4y1LwOX7j8r/vHphjDeMeGI4tNGeGA==}
-
-  '@navasardianmichael/gap-ui-storybook@0.0.0':
-    resolution: {integrity: sha512-CcTfj/HryiI7DDT7vu+H/z+H8gIC49LMqo6wl/x1AXPpnSBAoedD59IJHlv5Ekya02dmu5XujAarNrW+DpYDCw==, tarball: https://npm.pkg.github.com/download/@navasardianmichael/gap-ui-storybook/0.0.0/7ad52f9216a5d2a33bb0901ac0ed2548533c43c7}
-
-  '@navasardianmichael/gap-ui-storybook@0.0.2':
-    resolution: {integrity: sha512-Wku95eg9b7SnjRVVk3/E0Elm8E6A13a9TaZ0BnyWx9S4jpVZctb1Wb3r08BkQ5heau5DcxGRn0ROhFj5aYXWBA==, tarball: https://npm.pkg.github.com/download/@navasardianmichael/gap-ui-storybook/0.0.2/1c76e22d29e5e1575f7701f8ded1e8eb3f798e14}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2269,25 +2260,6 @@ snapshots:
       resolve: 1.22.11
 
   '@microsoft/tsdoc@0.16.0': {}
-
-  '@navasardianmichael/gap-ui-storybook@0.0.0(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))':
-    dependencies:
-      '@tailwindcss/vite': 4.1.17(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
-      tailwindcss: 4.1.17
-    transitivePeerDependencies:
-      - vite
-
-  '@navasardianmichael/gap-ui-storybook@0.0.2(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))':
-    dependencies:
-      '@navasardianmichael/gap-ui-storybook': 0.0.0(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))
-      '@tailwindcss/vite': 4.1.17(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
-      tailwindcss: 4.1.17
-    transitivePeerDependencies:
-      - vite
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
