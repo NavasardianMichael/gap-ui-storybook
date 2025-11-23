@@ -135,7 +135,6 @@ const App = () => {
 
   return (
     <div className="flex flex-col gap-8 p-8">
-      <Button>Test Button</Button>
       <h1 className="font-bold text-6xl text-center">GAP UI Storybook</h1>
       <hr />
       <div className="flex flex-col gap-4 gap-ui-kit_font-chronicle-display">
