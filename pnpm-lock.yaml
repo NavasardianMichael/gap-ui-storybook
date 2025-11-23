@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@navasardianmichael/gap-ui-storybook':
+        specifier: ^0.0.3
+        version: 0.0.3(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))
       '@tailwindcss/vite':
         specifier: ^4.1.17
         version: 4.1.17(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))
@@ -557,6 +560,9 @@ packages:
 
   '@microsoft/tsdoc@0.16.0':
     resolution: {integrity: sha512-xgAyonlVVS+q7Vc7qLW0UrJU7rSFcETRWsqdXZtjzRU8dF+6CkozTK4V4y1LwOX7j8r/vHphjDeMeGI4tNGeGA==}
+
+  '@navasardianmichael/gap-ui-storybook@0.0.3':
+    resolution: {integrity: sha512-BZz3BIYJPvxsM7Bmh4hMkKqUwbm5uGOe2uj1tEdd0hP+zpkNj3kCY1b6MP2PMVRvnS2mrf9c04LAISGvMIK2LA==, tarball: https://npm.pkg.github.com/download/@navasardianmichael/gap-ui-storybook/0.0.3/eb7c80d7a8afb00feca482c37c3f6e904e7cfa20}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2260,6 +2266,15 @@ snapshots:
       resolve: 1.22.11
 
   '@microsoft/tsdoc@0.16.0': {}
+
+  '@navasardianmichael/gap-ui-storybook@0.0.3(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))':
+    dependencies:
+      '@tailwindcss/vite': 4.1.17(vite@7.2.2(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
+      tailwindcss: 4.1.17
+    transitivePeerDependencies:
+      - vite
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:

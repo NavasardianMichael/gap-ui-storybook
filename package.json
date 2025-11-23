@@ -34,7 +34,8 @@
     "build": "pnpm build:lib && pnpm build:demo",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist/demo"
+    "deploy": "gh-pages -d dist/demo",
+    "release:lib": "npm version patch && pnpm build:lib && npm publish && git push --follow-tags"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
