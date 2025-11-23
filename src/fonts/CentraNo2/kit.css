@@ -4,108 +4,139 @@
     url("./assets/CentraNo2Hairline/font.woff") format("woff");
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2HairlineItalic/font.woff2") format("woff2"),
     url("./assets/CentraNo2HairlineItalic/font.woff") format("woff");
   font-weight: 100;
   font-style: italic;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2Thin/font.woff2") format("woff2"),
     url("./assets/CentraNo2Thin/font.woff") format("woff");
   font-weight: 200;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2ThinItalic/font.woff2") format("woff2"),
     url("./assets/CentraNo2ThinItalic/font.woff") format("woff");
   font-weight: 200;
   font-style: italic;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2Light/font.woff2") format("woff2"),
     url("./assets/CentraNo2Light/font.woff") format("woff");
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2LightItalic/font.woff2") format("woff2"),
     url("./assets/CentraNo2LightItalic/font.woff") format("woff");
   font-weight: 300;
   font-style: italic;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2Book/font.woff2") format("woff2"),
     url("./assets/CentraNo2Book/font.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2BookItalic/font.woff2") format("woff2"),
     url("./assets/CentraNo2BookItalic/font.woff") format("woff");
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2Medium/font.woff2") format("woff2"),
     url("./assets/CentraNo2Medium/font.woff") format("woff");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2MediumItalic/font.woff2") format("woff2"),
     url("./assets/CentraNo2MediumItalic/font.woff") format("woff");
   font-weight: 500;
   font-style: italic;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2Bold/font.woff2") format("woff2"),
     url("./assets/CentraNo2Bold/font.woff") format("woff");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2BoldItalic/font.woff2") format("woff2"),
     url("./assets/CentraNo2BoldItalic/font.woff") format("woff");
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2ExtraBold/font.woff2") format("woff2"),
     url("./assets/CentraNo2ExtraBold/font.woff") format("woff");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2ExtraBoldItalic/font.woff2") format("woff2"),
     url("./assets/CentraNo2ExtraBoldItalic/font.woff") format("woff");
   font-weight: 800;
   font-style: italic;
+  font-display: swap;
 }
+
 @font-face {
   font-family: CentraNo2;
   src: url("./assets/CentraNo2Black/font.woff2") format("woff2"),
     url("./assets/CentraNo2Black/font.woff") format("woff");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
-.gap-ui-kit_font-centra-no2 {
-  font-family: CentraNo2, Arial, Helvetica, sans-serif;
-}
+
 :root {
   --gap-ui-kit_secondary-font: "CentraNo2", Arial, Helvetica, sans-serif;
+}
+
+.gap-ui-kit_font-centra-no2 {
+  font-family: var(--gap-ui-kit_secondary-font);
 }

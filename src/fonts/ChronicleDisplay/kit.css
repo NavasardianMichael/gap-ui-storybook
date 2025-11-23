@@ -70,14 +70,11 @@
   font-style: normal;
   font-display: swap;
 }
-.gap-ui-kit_font-chronicle-display {
-  font-family: ChronicleDisplay, Times New Roman, Times, serif;
-}
-p {
-  font-family: ChronicleDisplay, Times New Roman, Times, serif;
-  font-weight: 400;
-  font-style: italic;
-}
+
 :root {
   --gap-ui-kit_primary-font: "ChronicleDisplay", "Times New Roman", Times, serif;
+}
+
+.gap-ui-kit_font-chronicle-display {
+  font-family: var(--gap-ui-kit_primary-font);
 }

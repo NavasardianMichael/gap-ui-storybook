@@ -175,6 +175,7 @@ export default defineConfig(({ mode }) => {
           exclude: ["src/demo"],
           outDir: "dist/lib",
           copyDtsFiles: true,
+          tsconfigPath: "./tsconfig.lib.json",
         }),
         copyFontsPlugin(),
         preventFontInliningPlugin(),
