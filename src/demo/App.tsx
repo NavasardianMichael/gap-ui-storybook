@@ -1,5 +1,7 @@
 import { Fragment, useState } from 'react';
 import './App.css';
+import '@navasardianmichael/gap-ui-storybook/fonts/CentraNo2/kit.css';
+import '@navasardianmichael/gap-ui-storybook/fonts/ChronicleDisplay/kit.css';
 
 const CHRONICLE_DISPLAY_FONT_TEMPLATE = [
   {
@@ -46,6 +48,21 @@ const CHRONICLE_DISPLAY_FONT_TEMPLATE = [
     label: 'Chronicle Display Bold',
     fontWeight: 700,
     fontStyle: 'normal',
+  },
+  {
+    label: 'Chronicle Display Bold Italic',
+    fontWeight: 700,
+    fontStyle: 'italic',
+  },
+  {
+    label: 'Chronicle Display Black',
+    fontWeight: 900,
+    fontStyle: 'normal',
+  },
+  {
+    label: 'Chronicle Display Black Italic',
+    fontWeight: 900,
+    fontStyle: 'italic',
   },
 ];
 
