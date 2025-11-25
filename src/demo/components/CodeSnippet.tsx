@@ -21,14 +21,14 @@ export const CodeSnippet: FC<PropsWithChildren<Props>> = ({ children, ...rest })
     }
 
     return (
-        <div {...rest} className="p-4 rounded-md bg-gray-100 relative">
+        <div {...rest} className="p-4 rounded-md bg-gray-100 relative border border-gray-300">
             <pre className='whitespace-pre-wrap wrap-break-word'>
                 <code>
                     {children}
                 </code>
             </pre>
             <button
-                className={`w-fit absolute top-2 right-2 p-1 rounded-sm bg-gray-200 ${isCopied ? 'cursor-not-allowed' : 'hover:cursor-pointer hover:bg-gray-300'}`}
+                className={`w-fit absolute top-2 right-2 p-1 rounded-md bg-gray-200 ${isCopied ? 'cursor-not-allowed' : 'hover:cursor-pointer hover:bg-gray-300'}`}
                 onClick={handleCopy}
                 disabled={isCopied}
             >

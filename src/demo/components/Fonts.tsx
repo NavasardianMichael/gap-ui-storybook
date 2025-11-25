@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react';
 import { CENTRA_NO2_FONT_TEMPLATE, CHRONICLE_DISPLAY_FONT_TEMPLATE } from './fontTemplates';
-import '@navasardianmichael/gap-ui-storybook/fonts/kit.css';
 import { CodeSnippet } from './CodeSnippet';
+import '@navasardianmichael/gap-ui-storybook/fonts/kit.css';
 
 const Fonts = () => {
   const [fontSize, setFontSize] = useState(16);
@@ -12,6 +12,18 @@ const Fonts = () => {
   return (
     <Fragment>
       <div className="flex flex-col gap-4 gap-ui-kit_font-chronicle-display">
+        <h2 className="text-5xl">Fonts Kit</h2>
+        <div className='flex flex-col gap-2'>
+          <p>Snippet to use in an html file</p>
+          <CodeSnippet>
+            {`<link rel="preconnect" href="https://qa.gapinternational.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://gapinternational.com/gap-ui-kit/lib/fonts/kit.css"
+/>`}
+          </CodeSnippet>
+        </div>
+        <hr />
         <h2 className="text-5xl">Chronicle Display</h2>
         <div className="flex flex-row gap-8">
           <div className="flex flex-col gap-8 w-1/2">
@@ -38,13 +50,10 @@ const Fonts = () => {
                 className="w-full"
               />
             </div>
-            <div>
+            <div className='flex flex-col gap-2'>
+              <p>Snippet to use in an html file</p>
               <CodeSnippet>
                 {`<link rel="preconnect" href="https://qa.gapinternational.com" crossorigin />
-<link
-  rel="stylesheet"
-  href="https://gapinternational.com/gap-ui-kit/lib/fonts/CentraNo2/kit.css"
-/>
 <link
   rel="stylesheet"
   href="https://gapinternational.com/gap-ui-kit/lib/fonts/ChronicleDisplay/kit.css"
@@ -102,6 +111,16 @@ const Fonts = () => {
                 onChange={(e) => setFontSize(Number(e.target.value))}
                 className="w-full"
               />
+            </div>
+            <div className='flex flex-col gap-2'>
+              <p>Snippet to use in an html file</p>
+              <CodeSnippet>
+                {`<link rel="preconnect" href="https://qa.gapinternational.com" crossorigin />
+<link
+  rel="stylesheet"
+  href="https://gapinternational.com/gap-ui-kit/lib/fonts/CentraNo2/kit.css"
+/>`}
+              </CodeSnippet>
             </div>
           </div>
           <div className="flex flex-col gap-4 border p-4 grow rounded-sm">
