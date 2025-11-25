@@ -96,9 +96,9 @@
 }
 
 :root {
-  --gap-ui-kit_primary-font: "ChronicleDisplay", "Times New Roman", Times, serif;
+  --primary-font: "ChronicleDisplay", "Times New Roman", Times, serif;
 }
 
-.gap-ui-kit_font-chronicle-display {
-  font-family: var(--gap-ui-kit_primary-font);
+.font-chronicle-display {
+  font-family: var(--primary-font);
 }

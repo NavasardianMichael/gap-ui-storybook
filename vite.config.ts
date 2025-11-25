@@ -163,6 +163,7 @@ export default defineConfig(({ mode }) => {
     }, {} as Record<string, string>);
 
     return {
+      base: "./",
       css: {
         postcss: {
           plugins: [prefixPostCssPlugin({ prefix: "gap-ui-kit_" })],
@@ -205,6 +206,7 @@ export default defineConfig(({ mode }) => {
 
   // 🎨 DEMO APP (dev & demo build)
   return {
+    base: "./",
     plugins: [react(), tailwindcss()],
     root: "src/demo",
     build: {
@@ -215,7 +217,6 @@ export default defineConfig(({ mode }) => {
       alias: {
         "@kit-lib": path.resolve(__dirname, "src"),
         "@kit-styles": path.resolve(__dirname, "src/styles"),
-        "@navasardianmichael/gap-ui-storybook": path.resolve(__dirname, "src"),
       },
     },
     server: {
