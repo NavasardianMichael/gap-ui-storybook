@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.gap-ui-kit {
+  pre {
+    code {
+      font-family: "Courier New", Courier, monospace !important;
+    }
+  }
+}
