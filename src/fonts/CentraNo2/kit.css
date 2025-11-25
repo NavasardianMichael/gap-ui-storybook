@@ -134,9 +134,10 @@
 }
 
 :root {
-  --secondary-font: "CentraNo2", Arial, Helvetica, sans-serif;
+  --font-secondary: "CentraNo2", Arial, Helvetica, sans-serif;
 }
 
+.font-secondary,
 .font-centra-no2 {
-  font-family: var(--secondary-font);
+  font-family: var(--font-secondary);
 }

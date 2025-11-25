@@ -96,9 +96,10 @@
 }
 
 :root {
-  --primary-font: "ChronicleDisplay", "Times New Roman", Times, serif;
+  --font-primary: "ChronicleDisplay", "Times New Roman", Times, serif;
 }
 
+.font-primary,
 .font-chronicle-display {
-  font-family: var(--primary-font);
+  font-family: var(--font-primary);
 }
