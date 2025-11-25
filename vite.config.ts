@@ -6,7 +6,7 @@ import { resolve, relative } from "node:path";
 import fs from "node:fs";
 import dts from "vite-plugin-dts";
 import { transformSync } from "esbuild";
-import postcss from "postcss";
+import postcss, { type Rule, type Declaration } from "postcss";
 
 // Helper to find all files in a directory
 function getFiles(dir: string, fileList: string[] = []): string[] {
@@ -33,7 +33,7 @@ function getFiles(dir: string, fileList: string[] = []): string[] {
 const prefixPostCssPlugin = (options: { prefix: string }) => {
   return {
     postcssPlugin: "prefix-class-name",
-    Rule(rule: any) {
+    Rule(rule: Rule) {
       rule.selector = rule.selector.replace(
         /\.([a-zA-Z_][\w-]*)/g,
         (match: string, className: string) => {
@@ -42,7 +42,7 @@ const prefixPostCssPlugin = (options: { prefix: string }) => {
         }
       );
     },
-    Declaration(decl: any) {
+    Declaration(decl: Declaration) {
       // Prefix variable declarations: --my-var: value
       if (decl.prop.startsWith("--")) {
         if (!decl.prop.startsWith(`--${options.prefix}`)) {
