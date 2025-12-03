@@ -19,7 +19,7 @@ const Fonts = () => {
             {`<link rel="preconnect" href="https://qa.gapinternational.com" crossorigin />
 <link
   rel="stylesheet"
-  href="https://gapinternational.com/gap-ui-kit/lib/fonts/kit.css"
+  href="https://www.gapinternational.com/gap-ui-kit/lib/fonts/kit.css"
 />`}
           </CodeSnippet>
         </div>
@@ -56,7 +56,7 @@ const Fonts = () => {
                 {`<link rel="preconnect" href="https://qa.gapinternational.com" crossorigin />
 <link
   rel="stylesheet"
-  href="https://gapinternational.com/gap-ui-kit/lib/fonts/ChronicleDisplay/kit.css"
+  href="https://www.gapinternational.com/gap-ui-kit/lib/fonts/ChronicleDisplay/kit.css"
 />`}
               </CodeSnippet>
             </div>
@@ -118,7 +118,7 @@ const Fonts = () => {
                 {`<link rel="preconnect" href="https://qa.gapinternational.com" crossorigin />
 <link
   rel="stylesheet"
-  href="https://gapinternational.com/gap-ui-kit/lib/fonts/CentraNo2/kit.css"
+  href="https://www.gapinternational.com/gap-ui-kit/lib/fonts/CentraNo2/kit.css"
 />`}
               </CodeSnippet>
             </div>
