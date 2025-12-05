@@ -16,7 +16,7 @@ const Fonts = () => {
         <div className='flex flex-col gap-2'>
           <p>Snippet to use in an html file</p>
           <CodeSnippet>
-            {`<link rel="preconnect" href="https://qa.gapinternational.com" crossorigin />
+            {`<link rel="preconnect" href="https://www.gapinternational.com" crossorigin />
 <link
   rel="stylesheet"
   href="https://www.gapinternational.com/gap-ui-kit/lib/fonts/kit.css"
@@ -53,7 +53,7 @@ const Fonts = () => {
             <div className='flex flex-col gap-2'>
               <p>Snippet to use in an html file</p>
               <CodeSnippet>
-                {`<link rel="preconnect" href="https://qa.gapinternational.com" crossorigin />
+                {`<link rel="preconnect" href="https://www.gapinternational.com" crossorigin />
 <link
   rel="stylesheet"
   href="https://www.gapinternational.com/gap-ui-kit/lib/fonts/ChronicleDisplay/kit.css"
@@ -115,7 +115,7 @@ const Fonts = () => {
             <div className='flex flex-col gap-2'>
               <p>Snippet to use in an html file</p>
               <CodeSnippet>
-                {`<link rel="preconnect" href="https://qa.gapinternational.com" crossorigin />
+                {`<link rel="preconnect" href="https://www.gapinternational.com" crossorigin />
 <link
   rel="stylesheet"
   href="https://www.gapinternational.com/gap-ui-kit/lib/fonts/CentraNo2/kit.css"
